@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 13vh;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(43, 36, 36);
+   /* background-color: #5F9DF7; */
+  }
+  .logo-container {
+    border: 3px solid #fff;
+    border-radius:50%;
+    transition: border 0.15s;
+  }
+  .logo-container:hover {
+    border: 3px solid #45CB85 ;
+  }
+  .logo {
+    width: 70px;  
+    height: 60px;
+    border-radius:50%;
+  
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 20px;
+   
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav ul li a:hover {
+    color: #45CB85;
+  }
+  .hc-visited:visited {
+    color: #45CB85;
+  }
+  .creator {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .creator:hover {
+    color:#45CB85;
+  }
+  
+  .custom-shape-divider-bottom-1668092422 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668092422 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 105px;
+}
+
+.custom-shape-divider-bottom-1668092422 .shape-fill {
+    fill:  #D6E4E5 ;
+}
+  
+  /* content */
+  
+  
+  .hero {
+    background-image: url('domainbkg.jpg');
+    background-position: center; 
+    position: relative;
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-container h4 {
+    color: #D6E4E5;
+    padding: 30px 0;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  .hero-container .search-box {
+    width: 200px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+  }
+  .search-box:placeholder {
+    color: #9e9ea7;
+   }
+  
+  .hero-container .search-btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background: #45CB85;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid#45CB85;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #45CB85;
+  }
+  .search-btn:hover {
+    color: #45CB85;
+    box-shadow: inset 0 -100px 0 0 white;
+  }
+  .search-btn:active {
+    transform: scale(0.9);
+  }
+  
+  /* cards section */
+  .cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  #D6E4E5;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    width: 280px;
+    height: 300px;
+    background-color:#45CB85;
+    color: white;
+    transition: transform .2s;
+  
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
+  .description {
+    padding: 20px;
+  }
+  .description h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .description p {
+    margin-bottom: 15px;
+  }
+  .description a {
+    color: white;
+  }
+  @media (max-width: 700px){
+   nav ul li a{
+    font-size: 10px;
+   }
+   .creator {
+    font-size: 10px;
+   }
+   .card {
+    width: 160px;
+    height: 220px;
+   }
+   .description h4 {
+    font-size: 20px;
+  }
+  }
+ 

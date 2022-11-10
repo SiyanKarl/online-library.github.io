@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 13vh;
+    margin: auto;
+    align-items: center;
+    background-color:  rgb(43, 36, 36);
+   /* background-color: #5F9DF7; */
+  }
+  .logo-container {
+    border: 3px solid #fff;
+    border-radius:50%;
+    transition: border 0.15s;
+}
+.logo-container:hover {
+    border: 3px solid #45CB85 ;
+}
+  .logo {
+    width: 70px;  
+    height: 60px;
+    border-radius:50%;
+  
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 20px;
+   
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav ul li a:hover {
+    color: #45CB85;
+  }
+  .genre-visited:visited {
+    color: #45CB85;
+  }
+  .creator {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .creator:hover {
+    color:#45CB85;
+  }
+  
+  
+  
+  body{
+    background-image: url('images/domainbkg.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+.Genre {
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+.container1{ 
+    height: 650px;
+    border: 2px solid rgb(30,30,30);
+    background-image: url('fantasy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container2 {  
+    height: 650px;
+    border: 2px solid rgb(30,30,30);
+    background-image: url('horror.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container3 {  
+    height: 650px;
+    border: 2px solid rgb(30,30,30);
+    background-image: url('romance.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container4 {  
+    height: 650px;
+    border: 2px solid rgb(30,30,30);
+    background-image: url('sci-fi.jpg');
+    background-size: cover;
+    background-position: center;
+  
+}
+.genbkg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+@media (min-aspect-ratio: 16/9){
+    .genbkg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .genbkg{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/* Fantasy books*/
+.card1 {
+ display: inline-block;
+ margin: 20px 20px 20px 50px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('twilight.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card2 {
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('twSaga2.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card3{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('stormborn.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card4{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('darktower.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card5{
+ display: inline-block;
+ margin: 20px 20px 20px 50px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('hobbit.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card6{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('narnia.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card7{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('divergent.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card8{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('giver.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+/* horror books*/
+.card9{
+ display: inline-block;
+ margin: 0px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('Ajin.png');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card10{
+ display: inline-block;
+ margin: 0px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('whentablesturn.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card11{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('midnightRoad.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card12{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('infected.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card13{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('215lexAve.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card14{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('WarmBodies.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card15{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('monsterIsland.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card16{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('necroscope.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+/* romance books*/
+.card17{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('PrideAndPrejudice.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card18{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('JaneEyre.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card19{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('HisIntoHer.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card20{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('HisIntoHer2.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card21{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('HisIntoHer3.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card22{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('MeBeforeYou.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card23{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('FatalAlliances.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card24{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('CatchMe.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+
+/* sci-fi books*/
+.card25{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('dune.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+
+.card26{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('snowCrash.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card27{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('martian.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card28{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('hyperion.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card29{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('neuromancer.png');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card30{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('metro2033.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card31{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('thePower.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+.card32{
+ display: inline-block;
+ margin: 20px 20px 20px 20px;
+ width: 190px;
+ height: 254px;
+ transition: transform 0.5s;
+ background-image: url('moonrise.jpg');
+ background-position: center;
+ background-size: cover;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.5s;
+}
+
+.card1:hover{
+    transform:translateY(-10px);
+}
+.card2:hover{
+    transform:translateY(-10px);
+}
+.card3:hover{
+    transform:translateY(-10px);
+}
+.card4:hover{
+    transform:translateY(-10px);
+}
+.card5:hover{
+    transform:translateY(-10px);
+}
+.card6:hover{
+    transform:translateY(-10px);
+}
+.card7:hover{
+    transform:translateY(-10px);
+}
+.card8:hover{
+    transform:translateY(-10px);
+}
+.card8:hover{
+    transform:translateY(-10px);
+}
+.card9:hover{
+    transform:translateY(-10px);
+}
+.card10:hover{
+    transform:translateY(-10px);
+}
+.card11:hover{
+    transform:translateY(-10px);
+}
+.card12:hover{
+    transform:translateY(-10px);
+}
+.card13:hover{
+    transform:translateY(-10px);
+}
+.card14:hover{
+    transform:translateY(-10px);
+}
+.card15:hover{
+    transform:translateY(-10px);
+}
+.card16:hover{
+    transform:translateY(-10px);
+}
+.card17:hover{
+    transform:translateY(-10px);
+}
+.card18:hover{
+    transform:translateY(-10px);
+}
+.card19:hover{
+    transform:translateY(-10px);
+}
+.card20:hover{
+    transform:translateY(-10px);
+}
+.card21:hover{
+    transform:translateY(-10px);
+}
+.card22:hover{
+    transform:translateY(-10px);
+}
+.card23:hover{
+    transform:translateY(-10px);
+}
+.card24:hover{
+    transform:translateY(-10px);
+}
+.card25:hover{
+    transform:translateY(-10px);
+}
+.card26:hover{
+    transform:translateY(-10px);
+}
+.card27:hover{
+    transform:translateY(-10px);
+}
+.card28:hover{
+    transform:translateY(-10px);
+}
+.card29:hover{
+    transform:translateY(-10px);
+}
+.card30:hover{
+    transform:translateY(-10px);
+}
+.card31:hover{
+    transform:translateY(-10px);
+}
+.card32:hover{
+    transform:translateY(-10px);
+}
+
+
+.title {
+ text-align: center;
+ margin-top: 0.5em;
+ font-weight: bold;
+ font-size: x-large;
+ color: #fff;
+ background-color: rgb(30,30,30);
+}
+
+.title-h {
+ text-align: center;
+ margin-top: 0.5em;
+ font-weight: bold;
+ font-size: x-large;
+ color: #E3170A;
+ background-color: rgb(30,30,30);
+}
+
+.pricecontainer {
+ width: 100%;
+ margin-top: 0.7em;
+ background-color: rgb(30,30,30);
+ box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
+}
+
+.price {
+ text-align: center;
+ color: rgb(180,180,180);
+ font-size: x-large;
+ font-weight: bold;
+ padding: 0.75em 0 0 0;
+}
+
+.pricedescriptor {
+ text-align: center;
+ color: rgb(118, 118, 118);
+ font-size: medium;
+ padding: 0 0 1em 0;
+ margin-bottom: 50px;
+}
+
+.btncontainer {
+ text-align: center;
+}
+
+.btncontainer button {
+ margin-top: 1em;
+ padding: 0.5em 0.8em 0.5em 0.8em;
+ border-style: none;
+ border-radius: 1000000px;
+ color: rgb(239, 239, 239);
+ font-weight: bold;
+ background-color:  rgb(30,30,30);
+ transition: box-shadow 0.15s ease-in-out;
+}
+
+.btncontainer button:hover {
+ box-shadow: inset 0px 0px 5px rgb(0,0,0);
+ transition: box-shadow 0.15s ease-in-out;
+}
+@media (max-width: 700px){
+    nav ul li a{
+     font-size: 10px;
+    }
+    .creator {
+     font-size: 10px;
+    }
+   }
+  

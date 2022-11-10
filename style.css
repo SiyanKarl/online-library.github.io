@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url('bkg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 80px;
+text-align: center;
+
+}
+
+.ContainerEffects {
+border-radius: 29px;
+background:transparent;
+box-shadow:  -35px 35px 50px #6ba8b1,
+             35px -35px 50px #b9ffff;
+height: 450px;
+width: 450px;
+
+}
+
+
+
+
+
+.input-group1 {
+ position: relative;
+ margin-top: 50px;
+}
+.input-group2{
+ position: relative;
+ margin-top: 70px;
+}
+.input {
+ border: solid 1.5px #92e6f2;
+ border-radius: 1rem;
+ background:#F8F0FB;
+
+ padding: 1rem;
+ font-size: 1rem;
+ color: #211A1D;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.user-label {
+ position: absolute;
+ left: 130px;
+ color:  #211A1D;
+ pointer-events: none;
+ transform: translateY(1rem);
+ transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus, input:valid {
+ outline: none;
+ border: 1.5px solid #92e6f2;
+}
+
+.input:focus ~ label, input:valid ~ label {
+ transform: translateY(-50%) scale(0.8);
+ background-color:  transparent;
+ padding: 0 .2em;
+ color: #211A1D;
+}
+
+button {
+ 
+ margin-top: 110px;
+ margin-left: -60px;
+ text-decoration: none;
+ position:absolute;
+ border: none;
+ font-size: 14px;
+ font-family: inherit;
+ color: #fff;
+ width: 9em;
+ height: 3em;
+ line-height: 2em;
+ text-align: center;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 300%;
+ border-radius: 30px;
+ z-index: 1;
+}
+
+button:hover {
+ animation: ani 8s linear infinite;
+ border: none;
+}
+
+@keyframes ani {
+ 0% {
+  background-position: 0%;
+ }
+
+ 100% {
+  background-position: 400%;
+ }
+}
+
+button:before {
+ content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 400%;
+ border-radius: 35px;
+ transition: 1s;
+}
+
+button:hover::before {
+ filter: blur(20px);
+}
+
+button:active {
+ background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+

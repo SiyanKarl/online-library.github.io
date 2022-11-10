@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 13vh;
+  margin: auto;
+  align-items: center;
+  background-color: rgb(43, 36, 36);
+ /* background-color: #5F9DF7; */
+}
+.logo-container {
+  border: 3px solid #fff;
+  border-radius:50%;
+  transition: border 0.15s;
+}
+.logo-container:hover {
+  border: 3px solid #45CB85 ;
+}
+.logo {
+  width: 70px;  
+  height: 60px;
+  border-radius:50%;
+
+}
+nav ul li{
+  display: inline-block;
+  margin: 20px;
+ 
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul li a:hover {
+  color: #45CB85;
+}
+.about-visited:visited {
+  color: #45CB85;
+}
+.creator {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.creator:hover {
+  color:#45CB85;
+}
+
+  /* content */
+
+  body  {
+    background-image: url('domainbkg.jpg');
+    background-position: center;    
+}
+
+section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+  width: 95vw;
+  height: 90vh;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.welcome-content {
+  background-color: #45CB85;
+  opacity: 0.7;
+  padding: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.introduction-content {
+  display: flex;
+  justify-content: center;
+  background-color: #5b9b7a;
+  opacity: 0.8;
+  color: white;
+  padding: 20px;
+  font-family: 'Saira Condensed', sans-serif;
+}
+.intro-title {
+  font-size: 65px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.intro-presentation {
+  font-size: 19.5px;
+  opacity: 1;
+}
+.right-section{
+  width: 20%;
+  height: 520px;
+  background-color: #45CB85;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.right-section p {
+  font-size: 25px;
+  color: white;
+  padding: 27px;
+  font-family: 'Saira Condensed', sans-serif;
+  opacity: 1;
+}
+
+
+
+
+
+
+  @media (max-width: 700px){
+    nav ul li a{
+     font-size: 10px;
+    }
+    .creator {
+     font-size: 10px;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    .content-container {
+      display: block;
+    }
+    .welcome-content {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .introduction-content {
+      display: block;
+    }
+    .intro-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+    .intro-presentation{
+      font-size: 12px;
+      margin: 10px;
+    }
+    .right-section{
+      display: block;
+      width: 280px;
+      height: 200px;
+      margin: 20px;
+      background-color: #45CB85;
+      opacity: 0.8;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
+    }
+    .right-section p {
+      font-size: 15px;
+    }
+    }
+  
